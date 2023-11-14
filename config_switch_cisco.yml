@@ -1,0 +1,19 @@
+---
+ - hosts: sw1
+   gather_facts: no
+   roles:
+#         - show_config
+#           - change_password
+#           - change_hostname
+#        - config_interface
+#        - create_vlan
+#        - save_config
+         - config_snmp                
+#Debug code
+#   tasks:
+#  - name: debug
+#    register: config_output
+#  - debug:
+#        var: config_output.stdout_lines
+...
+
